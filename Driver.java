@@ -1,7 +1,7 @@
 
 public class Driver {
 	public static void main(String [] args) {
-		Polynomial p = new Polynomial();
+		/* Polynomial p = new Polynomial();
 		System.out.println(p.evaluate(3));
 		double [] c1 = {6,0,0,5};
 		Polynomial p1 = new Polynomial(c1);
@@ -12,6 +12,15 @@ public class Driver {
 		if(s.hasRoot(1))
 			System.out.println("1 is a root of s");
 		else
-			System.out.println("1 is not a root of s");
-				}
+			System.out.println("1 is not a root of s"); */
+		Polynomial p = new Polynomial();
+		p.coefs = new double[]{1, 2, 3};
+		p.pols = new int[]{1, 2, 3};
+		// Polynomial a = p.multiply(p);
+		// a.display();
+
+		Polynomial fromFile = new Polynomial("test.txt");
+		fromFile.saveToFile("test.out");
+
+	}
 }
