@@ -130,14 +130,6 @@ public class Polynomial {
 		return evaluate(x) == 0;
 	}
 
-	public void display() {
-		System.out.println("=============");
-		for (int i = 0; i < pols.length; i++) {
-			System.out.println(coefs[i] + "x^" + pols[i]);
-		}
-		System.out.println("=============");
-	}
-
 	public void saveToFile(String f) {
 		try {
 			FileWriter o = new FileWriter(f);
